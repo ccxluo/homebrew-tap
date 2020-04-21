@@ -1,7 +1,7 @@
 class Marathon < Formula
   desc "Cross-platform test runner written for Android and iOS projects"
   homepage "https://malinskiy.github.io/marathon/"
-  url "https://github.com/Malinskiy/marathon/releases/download/0.5.1/marathon-0.5.1.zip"
+  url "https://github.com/Malinskiy/marathon/releases/download/0.5.2/marathon-0.5.2.zip"
   sha256 "a25c4bbe99eb3564dd682051adbedff24536a5e7020100529f53f7341d68584e"
 
   bottle :unneeded
