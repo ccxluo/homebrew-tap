@@ -1,12 +1,12 @@
 class Marathon < Formula
   desc "Cross-platform test runner written for Android and iOS projects"
   homepage "https://malinskiy.github.io/marathon/"
-  url "https://github.com/Malinskiy/marathon/releases/download/0.5.2/marathon-0.5.2.zip"
-  sha256 "a25c4bbe99eb3564dd682051adbedff24536a5e7020100529f53f7341d68584e"
+  url "https://github.com/Malinskiy/marathon/releases/download/0.6.0/marathon-0.6.0.zip"
+  sha256 "aa31ad62aaea44f8870f42a59aa424affe02e44f49840e6ddb1087ccdd8e6af3"
 
   bottle :unneeded
 
-  depends_on :java => "1.8+"
+  depends_on "openjdk@8"
 
   def install
     rm_f Dir["bin/*.bat"]
