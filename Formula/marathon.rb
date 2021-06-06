@@ -1,8 +1,8 @@
 class Marathon < Formula
   desc "Cross-platform test runner written for Android and iOS projects"
-  homepage "https://malinskiy.github.io/marathon/"
-  url "https://github.com/Malinskiy/marathon/releases/download/0.6.1/marathon-0.6.1.zip"
-  sha256 "61e2340b2a16ae3e50d6518b6fe92613df1d8b064362507eb64fa6cd38efaa4c"
+  homepage "https://marathonlabs.github.io/marathon/"
+  url "https://github.com/MarathonLabs/marathon/releases/download/0.6.2/marathon-0.6.2.zip"
+  sha256 "1d60f4a3326b88642640042552a54655c5f9a8410a08e93ae292e5b16effceb6"
 
   bottle :unneeded
 
@@ -15,6 +15,6 @@ class Marathon < Formula
   end
 
   test do
-    assert_match "marathon v0.6.1: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
+    assert_match "marathon v0.6.2: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
   end
 end
