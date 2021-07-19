@@ -6,7 +6,7 @@ class Marathon < Formula
 
   bottle :unneeded
 
-  depends_on "openjdk@8"
+  depends_on "openjdk@11"
 
   def install
     rm_f Dir["bin/*.bat"]
