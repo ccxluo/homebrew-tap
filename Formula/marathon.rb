@@ -15,6 +15,6 @@ class Marathon < Formula
   end
 
   test do
-    assert_match "marathon v0.6.3: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
+    assert_match "marathon v0.6.5: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
   end
 end
