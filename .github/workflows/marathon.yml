@@ -1,0 +1,21 @@
+name: update marathon formula
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'New version of marathon'
+        required: true
+      sha:
+        description: 'Expected sha of the zip release'
+        required: true
+jobs:
+  marathon:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v1
+      - run: bash .template/render.sh .template/marathon.rb > Formula/marathon.rb
+        env:
+          VERSION: ${{ github.event.inputs.version }}
+          SHA:  ${{ github.event.inputs.sha }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
