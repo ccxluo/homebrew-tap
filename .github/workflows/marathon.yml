@@ -19,3 +19,8 @@ jobs:
           SHA:  ${{ github.event.inputs.sha }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: update marathon to ${{ github.event.inputs.version }}
+          title: update marathon to ${{ github.event.inputs.version }}
+          branch: update-marathon
+          base: master
