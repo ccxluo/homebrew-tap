@@ -4,8 +4,6 @@ class Marathon < Formula
   url "https://github.com/MarathonLabs/marathon/releases/download/0.7.0/marathon-0.7.0.zip"
   sha256 "6f6a3c7eb7763aabd7cee235f8b492b0663489dac320e8b2ac0d435e154f68b0"
 
-  bottle :unneeded
-
   depends_on "openjdk@11"
 
   def install
