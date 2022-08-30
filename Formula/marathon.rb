@@ -1,8 +1,8 @@
 class Marathon < Formula
   desc "Cross-platform test runner written for Android and iOS projects"
   homepage "https://marathonlabs.github.io/marathon/"
-  url "https://github.com/MarathonLabs/marathon/releases/download/0.7.4/marathon-0.7.4.zip"
-  sha256 "3d6b4cddf4ee2f65911ee466681f7b101d8b587df9cd03b292e033b92126d626"
+  url "https://github.com/MarathonLabs/marathon/releases/download/0.7.5/marathon-0.7.5.zip"
+  sha256 "a1d35163bd493601f34113ecfa5440a9b53eae22a005959767aa02a198254750"
 
   depends_on "openjdk@11"
 
@@ -13,6 +13,6 @@ class Marathon < Formula
   end
 
   test do
-    assert_match "marathon v0.7.4: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
+    assert_match "marathon v0.7.5: unrecognized option '--version'", shell_output("#{bin}/marathon --version")
   end
 end
