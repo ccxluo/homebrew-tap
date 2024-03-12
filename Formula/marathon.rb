@@ -1,8 +1,10 @@
 class Marathon < Formula
   desc "Cross-platform test runner written for Android and iOS projects"
-  homepage "https://marathonlabs.github.io/marathon/"
-  url "https://github.com/MarathonLabs/marathon/releases/download/0.9.1/marathon-0.9.1.zip"
-  sha256 "060792d9483695f677cb1c73e35a808555281babfb034a9c5b2c3fc98a19e1da"
+  homepage "https://docs.marathonlabs.io/runner/"
+  url "https://github.com/MarathonLabs/marathon/releases/download/0.10.0/marathon-0.10.0.zip"
+  sha256 "b0f8098f6a1a3ec21a43b66404a783edabbe2102ac930f60eb8b5ca111c6954d"
+  version "0.10.0"
+  license "GPL-2.0-only"
 
   depends_on "openjdk@11"
 
